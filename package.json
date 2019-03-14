@@ -2,10 +2,12 @@
   "name": "track-last-commit",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node trackLastCommit.js"
   },
   "author": "Kim H. Nguyen <knguyen1@paypal.com> (http://github.paypal.com/knguyen1)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "shelljs": "0.8.3"
+  }
 }
