@@ -15,7 +15,6 @@ const packageName = `${require("./package.json").name}`;
 shell.exec(
   `echo "/*${packageName}_${packageVersion}_${gitHash}_${buildDate.getFullYear()}${month}${buildDate.getDate()}*/"|cat - ${path.resolve(
     __dirname,
-    "src/index.js"
-  )} > /tmp/out
-  && mv /tmp/out ${path.resolve(__dirname, "src/index.js")}`
+    "dist/index.js"
+  )} > /tmp/out && mv /tmp/out ${path.resolve(__dirname, "dist/index.js")}`
 );
